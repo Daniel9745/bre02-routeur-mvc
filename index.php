@@ -1,4 +1,7 @@
 <?php
 
-require "templates/layout.phtml";
-require_once "config/Router.php";
+
+require "config/autoload.php";
+
+$router = new Router();
+$router-> handleRequest($_GET);

@@ -19,4 +19,8 @@ class PageController{
         $route = "404";
         require "templates/layout.phtml";
     }
+    public function contact(): void {
+        $route = "contact";
+        require "templates/layout.phtml";
+    }
 }
